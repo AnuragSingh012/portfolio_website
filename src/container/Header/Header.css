@@ -1,0 +1,54 @@
+.app__header {
+    padding: 5rem 4.5rem 0 4.5rem;
+    display: flex;
+    @media screen and (max-width: 900px) {
+        padding: 5rem 3.5rem 1.5rem 3.5rem;
+        flex-direction: column-reverse;
+    } 
+}
+
+.app__header-content {
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 0%;  
+}
+
+.app__header-content h3 {
+    text-align: left;
+}
+
+.app__header-content h2 {
+    text-align: left;
+}
+
+.app__header-img{
+    padding: 2rem;
+    height: 400px;
+    display: flex;
+    flex: 1 1 0%;
+}
+
+.app__header-img img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.app__header-content button {
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 2rem 0;
+    transition: all 0.1s linear;
+}
+
+.app__header-content button:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+}
